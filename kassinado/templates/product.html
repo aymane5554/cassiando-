@@ -1,0 +1,29 @@
+{% extends 'original.html' %}
+{% load static %}
+{% block body %}
+<div id="product_details">
+    <img src={{product.image.url}} width="100%">
+    <h2>{{product.title}}</h2>
+    <h3> price : {{product.price}} DH</h3>
+    <h4> description :<br><br>{{product.description}}</h4>
+    <h5>views : {{product.views}}</h5>
+    
+</div>
+<div class="create">
+<form method="post" >
+    {% csrf_token %}
+    <div class="dd">
+    <input placeholder="Add a comment" type="text" name="the_comment" id="ttt">
+    </div>
+    <div class="subm">
+    <input type="submit" value="comment" id="sub">
+    </div>
+</form>
+</div>
+<div id="comments" style="padding: 20px;">
+   
+    {% for i in comments %}
+    <p >{{ i.text }} <b> /// </b> {{i.time}} <b> /// </b></p>
+    {% endfor %}
+</div>
+{% endblock %} 

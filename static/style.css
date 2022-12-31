@@ -1,0 +1,149 @@
+body {
+    background-color: #86B049;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif , Arial, Helvetica ;
+    
+}
+
+
+
+#img1 {
+    height: auto;
+    width: 100%;
+    border-bottom:2px solid black;
+    
+}
+.headers {
+    text-align: center;
+    
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  width: 50%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #5f8b1c;
+}
+.head {
+    background-color: #5f8b1c;
+    text-align: center;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 10px 10px black;
+}
+.row {
+    display: flex;
+  }
+  
+.column {
+    flex: 33.33%;
+    padding: 10px;
+  }
+
+.row img:hover {
+    box-shadow: 10px 10px black;
+}
+.row img {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.products{
+  margin-bottom: 10px;
+}
+
+#nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#nav a:hover{
+  
+  color: white;
+}
+#nav{
+  background-color: #5f8b1c;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  border-bottom:2px solid black;
+  border-top: 2px solid black ;
+}
+#product_details{
+  background-color: #5f8b1c;  
+  border: 2px solid black;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  border-radius: 20px;
+}
+#product_details img{
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 80%;
+  height: auto;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+#comments{
+  background-color: #5f8b1c;  
+  border: 2px solid black;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+
+  
+}
+#comments p {
+  word-wrap: break-word
+}
+.dd{
+  background-color: #5f8b1c;  
+  margin-right: 20px;
+  border-radius: 5px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.dd #ttt {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #253a05;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  background-color: #5f8b1c;
+  
+
+}
+.create #ttt::placeholder {
+  color: black;
+  
+}
+.create{
+  margin-left: 20px;
+}
+.subm{
+  margin-top: 10px;
+  text-align: center;
+}
+.subm #sub {
+  color: black;
+  padding: 12px 20px;
+  cursor: pointer;
+  background-color: #5f8b1c;
+  border: 1px solid #253a05;
+  border-radius: 4px;
+}

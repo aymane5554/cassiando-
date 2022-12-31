@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>
+            Cassinado
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+ 
+    </head>
+    <body>
+        <div id="nav">
+            <a href="/">
+                <b>Cassinado</b>
+            </a>
+        </div>    
+           
+            <img src="{% static 'kassin_sold.jpg' %}" id="img1">   
+            <div class="headers">
+                <h1>
+                    Cassinado Avocado Store 
+                </h1>
+                <h4>
+                    here you can find the number 1 avocados in the world, planted and harvested by kassin farms
+                </h4>
+                <p>
+                <b>Benefits of avocado :</b><br>Avocados are a source of vitamins C, E, K, and B6, as well as riboflavin, niacin, folate,<br> pantothenic acid, magnesium, and potassium. They also provide lutein, beta carotene,<br> and omega-3 fatty acids. Avocados contain high levels of healthy, beneficial fats, which can<br> help a person feel fuller between meals.
+                </p>
+            </div> 
+            <div class="head">
+                <h3>
+                    Our Products
+                </h3>
+            </div>
+            <div class="products">
+            <div class="row">
+                {% for i in products %}
+                <div class="column">
+                    <a href="{{i.id}}"><img src={{i.image.url}} width="100%"></a>
+                </div>
+                {% endfor %}
+        
+            </div> 
+        </div>   
+        
+    </body>
+</html>
