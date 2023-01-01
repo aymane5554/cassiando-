@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-$8+b1g&7970(_smpx0y-!9j5l(i@($zaig(8)4altj93njd!3u
 DEBUG = False
 
 ALLOWED_HOSTS = ['*']
-
+CSRF_TRUSTED_ORIGINS = ['https://cassiando-production.up.railway.app/']
 
 # Application definition
 
