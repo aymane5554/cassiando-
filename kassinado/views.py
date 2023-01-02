@@ -17,5 +17,5 @@ def product(request,id):
     
     return render(request,"product.html",{
         "product" : Product.objects.get(pk=id),
-        "comments" : Comments.objects.filter(product=Product.objects.get(pk=id))
+        "comments" : Comments.objects.filter(product=Product.objects.get(pk=id)).order_by("-time")
         })
